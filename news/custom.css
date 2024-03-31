@@ -1,0 +1,165 @@
+body {
+    font-family: 'Lato', sans-serif;
+    
+  }
+  :root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+}
+nav {
+  background-color: #f3faff;
+  box-shadow: 0 0 4px #bbd0e2;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  left: 0;
+  right: 0;
+}
+ul{
+  margin-left: 20px;
+  justify-content: center;
+}
+
+.main-nav {
+  justify-content: space-between;
+  padding-block: 8px;
+}
+
+.company-logo img {
+  width: 120px;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+.nav-links{
+  margin-right: 30px;
+}
+.flex {
+  
+  align-items: center;
+  
+}
+
+.nav-links ul {
+  gap: 16px;
+}
+
+.hover-link {
+  cursor: pointer;
+}
+
+.hover-link:hover {
+  color: var(--secondary-text-color);
+}
+
+.hover-link:active {
+  color: red;
+}
+
+.nav-item.active {
+  color: var(--accent-color);
+}
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* When the input field gets focus, change its width to 100% */
+  input[type=text]:focus {
+    width:65%;
+    height: 25%;
+
+  }
+.cards{
+  display: flex;
+  row-gap: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+.card{
+  min-height: 400px;
+  width: 360px;
+  background-color: azure;
+  border-radius: 12px;
+  border-color: aqua;
+  display:flex;
+  flex-direction: column;
+  margin: 4vh;
+  
+}
+img{
+  height: 250px;
+  width: 360px;
+  border-top-left-radius: 12px;
+  border-top-right-radius:12px ;
+
+}
+.main{
+  
+  left:0%;
+  right: 0%;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+}
