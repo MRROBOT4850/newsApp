@@ -1,0 +1,87 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+}
+.slide1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
+.mySlides :hover{
+    display: block;
+    height: 75vh;
+    width:85vw;
+}
+ul li{
+    display:inline-block;
+    position: relative;
+  }
+  ul li ul.dropdown li{
+    display: block;
+  }
+  ul li ul.dropdown{
+      width: 8vw;
+      background:red;
+      position:absolute;
+      z-index: 999;
+      display: none;
+  }
+  ul li a:hover{
+      background: #112c66;
+  }
+  ul li:hover ul.dropdown{
+      display: block;
+  }
+@media (max-width:800px) {
+    ul li{
+        display:inline-block;
+        position: relative;
+      }
+      ul li ul.dropdown li{
+        display: block;
+      }
+      ul li ul.dropdown{
+          width: 22vw;
+          background:red;
+          position:absolute;
+          z-index: 999;
+          display: none;
+      }
+      ul li a:hover{
+          background: #112c66;
+      }
+      ul li:hover ul.dropdown{
+          display: block;
+      }
+}
+.universe{
+    display: flex;
+    margin: 3vh;
+    justify-content: center;
+    padding: 2vw;
+    gap:3vw;
+    flex-wrap: wrap;
+
+}
+.marvel{
+    height: 36vh;
+    width:43vw;
+    display: flex;
+    flex-wrap: wrap;
+}
+h2 {
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin: 4vh;
+}
+.sect{
+    margin:2vh;
+    font-weight: 800;
+}
+

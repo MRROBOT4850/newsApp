@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+  <div id="myNav" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content " id="search-button">
+        <input type="text" id="search-text" name="search" placeholder="Search..">
+
+      <a href="#">About</a>
+      <a href="https://mrrobot4850.github.io/First-Project/index.html">Services</a>
+      <a href="#">Clients</a>
+      <a href="https://mrrobot4850.github.io/First-Project/contact.html">Contact</a>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <nav>
+    <div class="main-nav container flex">
+        <div class="nav-links">
+          <div  id="nav" class="nav">
+            <span style="font-size:30px;cursor:pointer;margin-left:15px" onclick="openNav()">&#9776;</span>
+          </div>
+     </div>
+        
+  </nav> 
+  <div class="main-nav flex  nav-links"><ul>
+    <li class="hover-link" id="ipl" onclick="onNavItemClick('Technology')">Technology</li>
+    <li class="hover-link" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+    <li class="hover-link" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+</ul>  
+</div>
+
+  <main>
+    <div class="cards-container  cards container " id="cards-container">
+        
+    </div>
+</main>
+
+
+<template id="template-news-card" >
+    <div class="card">
+        <div class="card-header img">
+            <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img">
+        </div>
+        <div class="card-content">
+            <h3 id="news-title">This is the Title</h3>
+            <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+            <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+        </div>
+    </div>
+    
+</template>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
