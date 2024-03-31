@@ -9,11 +9,11 @@ var url = 'https://newsapi.org/v2/everything?q=';
 //     .then(function(response) {
 //         console.log(response.json());
 //     })
-window.addEventListener("load", () => fetchNews("World"));
+// window.addEventListener("load", () => fetchNews("World"));
 
-function reload() {
-    window.location.reload();
-}
+// function reload() {
+//     window.location.reload();
+// }
 
 async function fetchNews(query) {
     const res = await fetch(`${url}${query}&apiKey=${API_KEY}`);
